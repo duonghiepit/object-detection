@@ -178,3 +178,37 @@ python ./test.py
 - [Faster-RCNN-FPN](https://github.com/txytju/Faster-RCNN-FPN)
 - [Deformable-ConvNets](https://github.com/msracver/Deformable-ConvNets)
 - [PyTorch-Deformable-Convolution-v2](https://github.com/developer0hye/PyTorch-Deformable-Convolution-v2)
+
+
+----------------------------------------------------
+🐠 Reef - DETR - Detection Transformer - Train
+DETR Baseline model for the Great Barrier Reef Competition
+
+
+An adaption of End to End Object Detection with Transformers:DETR to the Great Barrier Reef Competition
+I made various adaptations to it in order to work, based on the following code and documentation:
+
+This awesome fork End to End Object Detection with Transformers:DETR by prvi, correctly formatting the input, which is not coco and not pascal_voc, but something else.
+Albumentation code for bbox normalize and denormalize functions: here
+DETR's hands on Colab Notebook: Shows how to load a model from hub, generate predictions, then visualize the attention of the model (similar to the figures of the paper)
+Standalone Colab Notebook: In this notebook, we demonstrate how to implement a simplified version of DETR from the grounds up in 50 lines of Python, then visualize the predictions. It is a good starting point if you want to gain better understanding the architecture and poke around before diving in the codebase.
+Panoptic Colab Notebook: Demonstrates how to use DETR for panoptic segmentation and plot the predictions.
+Hugging Face DETR Documentation
+The main changes to the original notebook I forked are:
+
+Data format changed from [x_min, y_min, w, h] to [x_center, y_center, w, h]
+Resnet-like normalization instead of [0...1]
+This is the training notebook. You can find the inference one here: 🐠 Reef - DETR - Detection Transformer - Infer.
+Please, DO upvote if you find this useful!!
+     
+
+About DETR (Detection Transformer)
+Attention is all you need,paper for Transformers,changed the state of NLP and has achieved great hieghts. Though mainly developed for NLP , the latest research around it focuses on how to leverage it across different verticals of deep learning. Transformer acrhitecture is very very powerful, and is something which is very close to my part,this is the reason I am motivated to explore anything that uses transformers , be it google's recently released Tabnet or OpenAI's ImageGPT .
+
+Detection Transformer leverages the transformer network(both encoder and the decoder) for Detecting Objects in Images . Facebook's researchers argue that for object detection one part of the image should be in contact with the other part of the image for greater result especially with ocluded objects and partially visible objects, and what's better than to use transformer for it.
+
+The main motive behind DETR is effectively removing the need for many hand-designed components like a non-maximum suppression procedure or anchor generation that explicitly encode prior knowledge about the task and makes the process complex and computationally expensive
+
+The main ingredients of the new framework, called DEtection TRansformer or DETR, are a set-based global loss that forces unique predictions via bipartite matching, and a transformer encoder-decoder architecture
+![image](https://github.com/duonghiepit/object-d-tction/assets/138808781/59e429d6-d3f5-4933-924a-dadd8fe810f1)
+
