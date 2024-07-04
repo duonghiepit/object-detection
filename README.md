@@ -181,7 +181,7 @@ python ./test.py
 
 
 ----------------------------------------------------
-🐠 Reef - DETR - Detection Transformer - Train
+# 🐠 Reef - DETR - Detection Transformer - Train
 DETR Baseline model for the Great Barrier Reef Competition
 
 
