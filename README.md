@@ -212,3 +212,6 @@ The main motive behind DETR is effectively removing the need for many hand-desig
 The main ingredients of the new framework, called DEtection TRansformer or DETR, are a set-based global loss that forces unique predictions via bipartite matching, and a transformer encoder-decoder architecture
 ![image](https://github.com/duonghiepit/object-d-tction/assets/138808781/59e429d6-d3f5-4933-924a-dadd8fe810f1)
 
+![image](https://github.com/duonghiepit/object-d-tction/assets/138808781/d0829c73-c756-478b-a459-e110aac10b43)
+
+![image](https://github.com/duonghiepit/object-d-tction/assets/138808781/ad997b9a-74bb-4f36-a433-a172bdd0e3f7)
